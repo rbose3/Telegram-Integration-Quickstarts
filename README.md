@@ -20,3 +20,37 @@ By the end of the bootcamp, you'll have hands-on experience and real-world proje
 ## **Quick Start Guide**
 
 1. **Fork this repository**: Click the **Fork** button at the top-right corner of this page to create your copy.
+2. **Navigate to a course folder**: Each course has its own folder with step-by-step instructions.
+
+---
+
+## **How to Use This Repo**
+
+-   **Follow Along with the Instructor**: Each course is structured to allow you to follow the teacher step-by-step.
+-   **Complete Exercises and Submit Your Work**: Share your final outputs in the solution folder in each course.
+
+### **Folder Structure**
+
+```plaintext
+Flow-Bootcamp/
+├── Course_1_Deploy_A_Telegram_Web_App/
+│   ├── README.md
+│   ├── example/
+│   ├── solution/
+├── Course_2_Authenticate_Users_With_TWA_SDK/
+│   ├── README.md
+│   ├── example/
+│   ├── solution/
+├── Course_3_Connect_OKX_Wallet_Flow_EVM/
+│   ├── README.md
+│   ├── example/
+│   ├── solution/
+├── Course_4_Connect_Flow_Wallet_Flow_Cadence/
+│   ├── README.md
+│   ├── examples/
+│   ├── solutions/
+└── assets/
+    ├── reference-videos/
+    ├── images/
+
+```
