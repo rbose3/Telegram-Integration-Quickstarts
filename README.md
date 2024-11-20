@@ -47,8 +47,8 @@ Flow-Workshop-2024/
 │   ├── solution/
 ├── Course_4_Connect_Flow_Wallet_Flow_Cadence/
 │   ├── README.md
-│   ├── examples/
-│   ├── solutions/
+│   ├── example/
+│   ├── solution/
 └── assets/
     ├── reference-videos/
     ├── images/
