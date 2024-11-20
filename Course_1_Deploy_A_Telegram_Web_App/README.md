@@ -8,7 +8,7 @@
 
 View [Live Demo](http://t.me/FlowTelegramTestBot/app)
 
-![Live Demo Example](../assets/image/image1.gif)
+![Live Demo Example](assets/image/image1.gif)
 
 ---
 
@@ -20,7 +20,7 @@ This quickstart guide walks you through turning any web app into a TWA using [Bo
 
 ### 1. Go to [BotFather on Telegram](https://t.me/BotFather), the official bot for managing Telegram bots and web apps.
 
-![BotFater](../assets/image/image2.webp)
+![BotFather](../assets/image/image2.webp)
 
 ## Step 2: Create a New Bot with BotFather
 
