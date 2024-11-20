@@ -8,7 +8,7 @@
 
 View [Live Demo](http://t.me/FlowTelegramTestBot/app)
 
-![Live Demo Example](https://github.com/onflow/Telegram-Integration-Quickstarts/blob/fc91be762af48373a73edb5456653eebfb8d22b0/assets/images/image1.gif)
+![Live Demo Example](../assets/images/image1.gif)
 
 ---
 
@@ -26,7 +26,7 @@ This quickstart guide walks you through turning any web app into a TWA using [Bo
 
 ### 1. In the chat with BotFather, use the command `/newbot` Follow the prompts to give your bot a name and a unique username
 
-![/newbot](../assets/image/image3.webp)
+![/newbot](../assets/images/image3.webp)
 
 ## Step 3: Register a New Web App
 
@@ -43,14 +43,14 @@ This quickstart guide walks you through turning any web app into a TWA using [Bo
 -   **Web App URL** – Enter the URL of your web app.
 -   **Short Name** – Choose a unique identifier for your app, which will be used in your deep link.
 
-![/newapp 1](../assets/image/image4.webp)
-![/newapp 2](../assets/image/image5.webp)
+![/newapp 1](../assets/images/image4.webp)
+![/newapp 2](../assets/images/image5.webp)
 
 ## **Step 4:** Access Your TWA Link
 
 ### 1. After completing the steps, you’ll receive a deep link to your Telegram Web App. It will look something like this: [`t.me/FlowTelegramTestBot/app`](t.me/FlowTelegramTestBot/app)
 
-![Deeplink Telegram Web App](../assets/image/image6.webp)
+![Deeplink Telegram Web App](../assets/images/image6.webp)
 
 ## Conclusion
 
