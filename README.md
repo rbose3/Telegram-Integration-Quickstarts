@@ -1,4 +1,4 @@
-#Flow Bootcamp: HackQuest Workshops
+# Flow Bootcamp: HackQuest Workshops
 
 Welcome to the **Flow Bootcamp**, part of the **HackQuest: Flow Asia/APAC Hackathon**! This repo contains beginner-friendly workshops designed to help you kickstart your journey in building decentralized applications (dApps) and Telegram Web Apps (TWAs) on Flow.
 
@@ -14,6 +14,8 @@ This bootcamp is designed to help you:
 -   Build, test, and deploy your dApps on Flow.
 
 By the end of the bootcamp, you'll have hands-on experience and real-world projects to showcase!
+
+---
 
 ## **Quick Start Guide**
 
