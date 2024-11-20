@@ -1,6 +1,6 @@
-# Flow Workshop 2024: HackQuest Workshops
+# Telegram Integration Quickstarts
 
-Welcome to the **Flow Workshop**, part of the **HackQuest: Flow Asia/APAC Hackathon**! This repo contains beginner-friendly courses designed to help you kickstart your journey in building decentralized applications (dApps) and Telegram Web Apps (TWAs) on Flow.
+This repo contains beginner-friendly courses designed to help you kickstart your journey in building Telegram Web Apps (TWAs) on Flow.
 
 ---
 
