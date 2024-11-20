@@ -178,7 +178,7 @@ export default function Home() {
 
 This will create a deep link (e.g. https://t.me/WebAppToTwaBot/webapp) that you can access to check if your telegram web app display’s the user’s id and username
 
-<img src="../assets/images/image9.webp" alt="Final Result" width="500" />
+<img src="../assets/images/image9.webp" alt="Final Result" width="300" />
 
 # Conclusion
 
