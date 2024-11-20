@@ -2,6 +2,8 @@
 
 This repo contains beginner-friendly courses designed to help you kickstart your journey in building Telegram Web Apps (TWAs) on Flow.
 
+![Flow Telegram Fusion](/assets/images/Flow_Telegram.png)
+
 ---
 
 ## **About the Workshop**
