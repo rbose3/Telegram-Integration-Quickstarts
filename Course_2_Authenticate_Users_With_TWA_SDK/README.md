@@ -180,6 +180,6 @@ This will create a deep link (e.g. https://t.me/WebAppToTwaBot/webapp) that you 
 
 <img src="../assets/images/image9.webp" alt="Final Result" width="300" />
 
-# Conclusion
+## Conclusion
 
 This tutorial takes you through setting up a Next.js app with TypeScript, configuring a Telegram Web App with @twa-dev/sdk, and displaying authenticated user data from Telegram within your app.
