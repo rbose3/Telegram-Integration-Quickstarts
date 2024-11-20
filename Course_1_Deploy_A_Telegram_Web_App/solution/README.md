@@ -1,1 +1,1 @@
-Add your deeplink to your Telegram Web App:
+Add the deeplink to your Telegram Web App here:
