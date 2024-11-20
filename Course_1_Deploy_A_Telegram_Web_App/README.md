@@ -50,7 +50,7 @@ This quickstart guide walks you through turning any web app into a TWA using [Bo
 
 ### 1. After completing the steps, you’ll receive a deep link to your Telegram Web App. It will look something like this: [`t.me/FlowTelegramTestBot/app`](t.me/FlowTelegramTestBot/app)
 
-![Deeplink Telegram Web App](../assets/images/image6.webp)
+<img src="../assets/images/image6.webp" alt="Deeplink Telegram Web App" width="500" />
 
 ## Conclusion
 
