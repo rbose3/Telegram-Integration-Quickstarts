@@ -2,7 +2,7 @@
 
 ## Submit Your Solution
 
--   Submit your deeplink in the README.md in the [solutions folder](solution/readme.md)
+-   Submit your deeplink in the README.md in the [solutions folder](solution/README.md)
 
 ## Live Demo Example
 
