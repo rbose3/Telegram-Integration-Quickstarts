@@ -20,7 +20,7 @@ This quickstart guide walks you through turning any web app into a TWA using [Bo
 
 ### 1. Go to [BotFather on Telegram](https://t.me/BotFather), the official bot for managing Telegram bots and web apps.
 
-![BotFather](https://github.com/<username>/<repo-name>/blob/<branch>/assets/images/image2.webp?raw=true)
+![BotFather](../assets/images/image2.webp)
 
 ## Step 2: Create a New Bot with BotFather
 
