@@ -26,7 +26,7 @@ This quickstart guide walks you through turning any web app into a TWA using [Bo
 
 ### 1. In the chat with BotFather, use the command `/newbot` Follow the prompts to give your bot a name and a unique username
 
-![/newbot](../assets/images/image3.webp)
+<img src="../assets/images/image3.webp" alt="/newbot" width="500" />
 
 ## Step 3: Register a New Web App
 
@@ -43,8 +43,8 @@ This quickstart guide walks you through turning any web app into a TWA using [Bo
 -   **Web App URL** – Enter the URL of your web app.
 -   **Short Name** – Choose a unique identifier for your app, which will be used in your deep link.
 
-![/newapp 1](../assets/images/image4.webp)
-![/newapp 2](../assets/images/image5.webp)
+<img src="../assets/images/image4.webp" alt="/newapp 1" width="500" />
+<img src="../assets/images/image5.webp" alt="/newapp 2" width="500" />
 
 ## **Step 4:** Access Your TWA Link
 
