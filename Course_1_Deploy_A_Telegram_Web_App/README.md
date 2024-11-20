@@ -8,7 +8,7 @@
 
 View [Live Demo](http://t.me/FlowTelegramTestBot/app)
 
-![Live Demo Example](assets/image/image1.gif)
+![Live Demo Example](https://github.com/onflow/Telegram-Integration-Quickstarts/blob/fc91be762af48373a73edb5456653eebfb8d22b0/assets/images/image1.gif)
 
 ---
 
