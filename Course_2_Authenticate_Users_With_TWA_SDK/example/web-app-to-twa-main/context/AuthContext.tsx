@@ -1,11 +1,10 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import WebApp from '@twa-dev/sdk';
 
 type AuthContextType = {
-	userID: string | null;
+	userID: number | null;
 	username: string | null;
 	windowHeight: number;
 };
@@ -18,7 +17,7 @@ export const AuthContextProvider = ({
 	children: React.ReactNode;
 }) => {
 	const [windowHeight, setWindowHeight] = useState<number>(0);
-	const [userID, setUserID] = useState<any>(null);
+	const [userID, setUserID] = useState<number | null>(null);
 	const [username, setUsername] = useState<string | null>(null);
 
 	useEffect(() => {

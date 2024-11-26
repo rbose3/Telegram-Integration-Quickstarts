@@ -44,14 +44,13 @@ We’ll use React’s Context API to manage authentication and Telegram Web App 
 
 ```typescript
 // app/context/AuthContext.tsx
-/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import WebApp from '@twa-dev/sdk';
 
 type AuthContextType = {
-	userID: string | null;
+	userID: number | null;
 	username: string | null;
 	windowHeight: number;
 };
@@ -64,7 +63,7 @@ export const AuthContextProvider = ({
 	children: React.ReactNode;
 }) => {
 	const [windowHeight, setWindowHeight] = useState<number>(0);
-	const [userID, setUserID] = useState<any>(null);
+	const [userID, setUserID] = useState<number | null>(null);
 	const [username, setUsername] = useState<string | null>(null);
 
 	useEffect(() => {
@@ -127,29 +126,45 @@ export default function RootLayout({
 }
 ```
 
-## Step 4: Create a Home Page to Display User Info
+## Step 4: Create DisplayUser.tsx and use it on Home Page
 
 To test if it works, we’ll use the `useAuth` hook from `AuthContext` to access and display the Telegram-authenticated user’s ID, username, and viewport height.
 
-### 1. Create `app/page.tsx`
+### 1. Create `components/DisplayUser.tsx`
 
 ```typescript
+// components/DisplayUser.tsx
 'use client';
 
 import { useAuth } from '@/context/AuthContext';
 
-export default function Home() {
+export default function DisplayUser() {
 	const { userID, username, windowHeight } = useAuth();
 
 	return (
-		<main className="flex flex-col items-center justify-center min-h-screen text-center space-y-4">
+		<div className="flex flex-col items-center justify-center min-h-screen text-center space-y-4">
 			<h1 className="text-4xl font-bold">
 				Welcome to the Telegram Web App!
 			</h1>
 			<p>User ID: {userID || 'Not available'}</p>
 			<p>Username: {username || 'Not available'}</p>
 			<p>Window Height: {windowHeight}</p>
-		</main>
+		</div>
+	);
+}
+```
+
+### 2. Create `app/page.tsx`
+
+```typescript
+// app/page.tsx
+import DisplayUser from '@/components/DisplayUser';
+
+export default function Home() {
+	return (
+		<div>
+			<DisplayUser />
+		</div>
 	);
 }
 ```
