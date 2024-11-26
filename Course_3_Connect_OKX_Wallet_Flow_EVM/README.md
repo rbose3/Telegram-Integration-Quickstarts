@@ -10,6 +10,8 @@ View [Live Demo](http://t.me/FlowTelegramTestBot/okxapp)
 
 View [GitHub Example](https://github.com/bz-hashtag-0780/okx-wallet-telegram-flow-evm)
 
+![Live Demo Example](../assets/images/image12.gif)
+
 ---
 
 This guide covers connecting a OKX wallet as a Telegram Embedded wallet on Flow EVM
@@ -330,6 +332,8 @@ body {
 
 ### 1. Deploy your Next.js app to [Vercel](https://vercel.com/) (or your preferred hosting platform)
 
+<img src="../assets/images/image13.webp" alt="Web App" width="500" />
+
 # Step 7: Turn your Web App into a TWA
 
 ### 1. Go to [BotFather](https://t.me/BotFather) on Telegram and create a new bot
@@ -347,6 +351,8 @@ body {
 ### 3. Set your bot’s domain to your deployment URL
 
 This will create a deep link (e.g. [t.me/FlowTelegramTestBot/okxapp](https://t.me/FlowTelegramTestBot/okxapp)) that you can access via your phone to check if your telegram web app can connect with OKX Telegram embedded wallet.
+
+<img src="../assets/images/image14.webp" alt="Final Result" width="300" />
 
 # Conclusion
 
