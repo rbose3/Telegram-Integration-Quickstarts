@@ -10,7 +10,7 @@ View [Live Demo](http://t.me/FlowTelegramTestBot/okxapp)
 
 View [GitHub Example](https://github.com/bz-hashtag-0780/okx-wallet-telegram-flow-evm)
 
-![Live Demo Example](../assets/images/image12.gif)
+<img src="../assets/images/image12.gif" alt="Live Demo" width="300" />
 
 ---
 
