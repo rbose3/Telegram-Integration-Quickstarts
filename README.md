@@ -34,7 +34,7 @@ By the end of the workshop, you'll have hands-on experience and real-world proje
 ### **Folder Structure**
 
 ```plaintext
-Flow-Workshop-2024/
+Telegram-Integration-Quickstarts/
 ├── Course_1_Deploy_A_Telegram_Web_App/
 │   ├── README.md
 │   ├── example/
