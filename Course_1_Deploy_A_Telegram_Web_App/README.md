@@ -12,7 +12,9 @@ View [Live Demo](http://t.me/FlowTelegramTestBot/app)
 
 ---
 
-With Telegram’s Web Apps (TWAs), you can extend your web app's reach by integrating directly within Telegram.
+Turn any Web App into a Telegram Web App (TWA).
+
+With Telegram’s Web Apps, you can extend your web app's reach by integrating directly within Telegram.
 
 This quickstart guide walks you through turning any web app into a TWA using [BotFather](https://t.me/BotFather) in a few straightforward steps.
 

@@ -28,7 +28,7 @@ By the end of the workshop, you'll have hands-on experience and real-world proje
 
 ## **How to Use This Repo**
 
--   **Follow Along with the Instructor**: Each course is structured to allow you to follow the teacher step-by-step.
+-   **Follow Along with the Instructions**: Each course is structured to allow you to follow the instructions step-by-step.
 -   **Complete Exercises and Submit Your Work**: Share your final outputs in the solution folder in each course.
 
 ### **Folder Structure**
@@ -52,7 +52,6 @@ Flow-Workshop-2024/
 │   ├── example/
 │   ├── solution/
 └── assets/
-    ├── reference-videos/
     ├── images/
 
 ```
