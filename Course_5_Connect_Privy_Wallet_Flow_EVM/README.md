@@ -20,15 +20,11 @@ This guide walks you through the steps to set up a Next.js app using Privy Walle
 npx create-next-app@latest my-app --typescript
 ```
 
-​
-
 ### 2. Navigate to Your Project Directory
 
 ```bash
 cd my-app
 ```
-
-​
 
 ### 3. Install @privy-io/react-auth@latest and @solana/web3.js with the `--legacy-peer-deps` flag
 
