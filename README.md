@@ -51,6 +51,10 @@ Telegram-Integration-Quickstarts/
 │   ├── README.md
 │   ├── example/
 │   ├── solution/
+├── Course_5_Connect_Privy_Wallet_Flow_EVM/
+│   ├── README.md
+│   ├── example/
+│   ├── solution/
 └── assets/
     ├── images/
 
