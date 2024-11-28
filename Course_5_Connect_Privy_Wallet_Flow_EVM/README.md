@@ -16,31 +16,43 @@ This guide walks you through the steps to set up a Next.js app using Privy Walle
 
 ### 1. Run the command in your terminal
 
-`bash npx create-next-app@latest my-app --typescript`
+```bash
+npx create-next-app@latest my-app --typescript
+```
+
 ​
 
 ### 2. Navigate to Your Project Directory
 
-`bash cd my-app`
+```bash
+cd my-app
+```
+
 ​
 
 ### 3. Install @privy-io/react-auth@latest and @solana/web3.js with the `--legacy-peer-deps` flag
 
-`bash npm install @privy-io/react-auth@latest @solana/web3.js --legacy-peer-deps`
+```bash
+npm install @privy-io/react-auth@latest @solana/web3.js --legacy-peer-deps
+```
 
 Note: You may encounter some vulnerability warnings (Elliptic, WebSocket, tar, semver, IP package). These do not affect the security or functionality of the Privy Wallet.
 
 ## Step 2: Configure Your Privy App
 
-1. Sign in to Privy.io.
+1. Sign in to [Privy.io](https://privy.io/)
 2. Create a new application and copy the App ID.
 3. Set up your app's login methods in the Privy dashboard.
 4. Set your app to create embedded wallets for all users.
 
-## Step 3: Create an .env File
+## Step 3: Create an `.env` File
 
 Create a .env file in your project root and add your Privy App ID:
-`makefile NEXT_PUBLIC_PRIVY_APP_ID=your-privy-app-id`
+
+```makefile
+NEXT_PUBLIC_PRIVY_APP_ID=your-privy-app-id
+```
+
 Replace your-privy-app-id with the actual App ID from Step 2.
 
 ## Step 4: Update `layout.tsx` to use `PrivyProvider`
@@ -53,52 +65,44 @@ Replace the contents of your layout.tsx file with the following code:
 
 import './globals.css';
 import { PrivyProvider } from '@privy-io/react-auth';
+import React, { useEffect, useState } from 'react';
 
 export default function RootLayout({
 	children,
 }: {
 	children: React.ReactNode;
 }) {
+	// State to track app initialization
+	const [isAppInitialized, setIsAppInitialized] = useState(false);
+
+	useEffect(() => {
+		// Ensure that the app ID exists before initializing Privy
+		if (!process.env.NEXT_PUBLIC_PRIVY_APP_ID) {
+			console.error(
+				'Privy app ID is missing. Ensure NEXT_PUBLIC_PRIVY_APP_ID is set in your environment variables.'
+			);
+		} else {
+			setIsAppInitialized(true);
+		}
+	}, []);
+
 	return (
 		<html lang="en">
 			<body suppressHydrationWarning={true}>
-				<PrivyProvider
-					appId={process.env.NEXT_PUBLIC_PRIVY_APP_ID!}
-					config={{
-						appearance: {
-							theme: 'light',
-							accentColor: '#676FFF',
-							logo: 'https://cryptologos.cc/logos/flow-flow-logo.png', // Replace with your logo
-						},
-						embeddedWallets: {
-							createOnLogin: 'all-users',
-						},
-						// Flow EVM configuration
-						defaultChain: {
-							id: 747,
-							name: 'Flow',
-							network: 'flow',
-							nativeCurrency: {
-								name: 'Flow',
-								symbol: 'FLOW',
-								decimals: 18,
+				{isAppInitialized ? (
+					<PrivyProvider
+						appId={process.env.NEXT_PUBLIC_PRIVY_APP_ID!}
+						config={{
+							appearance: {
+								theme: 'light',
+								accentColor: '#676FFF',
+								logo: 'https://cryptologos.cc/logos/flow-flow-logo.png', // Replace with your logo
 							},
-							rpcUrls: {
-								default: {
-									http: [
-										'https://mainnet.evm.nodes.onflow.org',
-									],
-								},
+							embeddedWallets: {
+								createOnLogin: 'all-users',
 							},
-							blockExplorers: {
-								default: {
-									name: 'Flowscan',
-									url: 'https://evm.flowscan.io/',
-								},
-							},
-						},
-						supportedChains: [
-							{
+							// Flow EVM configuration
+							defaultChain: {
 								id: 747,
 								name: 'Flow',
 								network: 'flow',
@@ -121,11 +125,44 @@ export default function RootLayout({
 									},
 								},
 							},
-						],
-					}}
-				>
-					{children}
-				</PrivyProvider>
+							supportedChains: [
+								{
+									id: 747,
+									name: 'Flow',
+									network: 'flow',
+									nativeCurrency: {
+										name: 'Flow',
+										symbol: 'FLOW',
+										decimals: 18,
+									},
+									rpcUrls: {
+										default: {
+											http: [
+												'https://mainnet.evm.nodes.onflow.org',
+											],
+										},
+									},
+									blockExplorers: {
+										default: {
+											name: 'Flowscan',
+											url: 'https://evm.flowscan.io/',
+										},
+									},
+								},
+							],
+						}}
+					>
+						{children}
+					</PrivyProvider>
+				) : (
+					<div>
+						<h1>Application Error</h1>
+						<p>
+							Privy app ID is not set. Please check your
+							configuration.
+						</p>
+					</div>
+				)}
 			</body>
 		</html>
 	);
