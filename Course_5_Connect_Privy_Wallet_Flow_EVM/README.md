@@ -42,11 +42,16 @@ Note: You may encounter some vulnerability warnings (Elliptic, WebSocket, tar, s
 
 1. Sign in to [Privy.io](https://privy.io/)
 2. Create a new application and copy the App ID.
-   <img src="../assets/images/image16.png" alt="Privy App ID" width="500" />
+
+    <img src="../assets/images/image16.png" alt="Privy App ID" width="500" />
+
 3. Set up your app's login methods in the Privy dashboard.
-   <img src="../assets/images/image17.png" alt="Privy Login Methods" width="500" />
+
+    <img src="../assets/images/image17.png" alt="Privy Login Methods" width="500" />
+
 4. Set your app to create embedded wallets for all users.
-   <img src="../assets/images/image18.png" alt="Privy Embedded Wallets" width="500" />
+
+    <img src="../assets/images/image18.png" alt="Privy Embedded Wallets" width="500" />
 
 ## Step 3: Create an `.env` File
 
