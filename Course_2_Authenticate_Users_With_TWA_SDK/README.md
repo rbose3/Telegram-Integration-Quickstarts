@@ -8,7 +8,7 @@
 
 View [Live Demo](https://t.me/WebAppToTwaBot/webapp)
 
-View [Github Example](https://github.com/bz-hashtag-0780/web-app-to-twa/)
+View [Example Code](example/web-app-to-twa-main/)
 
 ![Live Demo Example](../assets/images/image7.gif)
 

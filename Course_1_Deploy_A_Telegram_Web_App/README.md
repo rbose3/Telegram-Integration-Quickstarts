@@ -8,6 +8,8 @@
 
 View [Live Demo](http://t.me/FlowTelegramTestBot/app)
 
+View [Example Solution](example/README.md)
+
 ![Live Demo Example](../assets/images/image1.gif)
 
 ---

@@ -8,6 +8,10 @@
 
 View [Live Demo](https://privy-flow-evm.vercel.app/)
 
+View [Example Code](example/privy-flow-evm-main/)
+
+![Live Demo Example](../assets/images/image15.gif)
+
 ---
 
 This guide walks you through the steps to set up a Next.js app using Privy Wallet for Flow EVM integration. By the end, you’ll have a working example of login functionality with wallet connection using Privy.
@@ -38,8 +42,11 @@ Note: You may encounter some vulnerability warnings (Elliptic, WebSocket, tar, s
 
 1. Sign in to [Privy.io](https://privy.io/)
 2. Create a new application and copy the App ID.
+   <img src="../assets/images/image16.png" alt="Privy App ID" width="500" />
 3. Set up your app's login methods in the Privy dashboard.
+   <img src="../assets/images/image17.png" alt="Privy Login Methods" width="500" />
 4. Set your app to create embedded wallets for all users.
+   <img src="../assets/images/image18.png" alt="Privy Embedded Wallets" width="500" />
 
 ## Step 3: Create an `.env` File
 
@@ -346,8 +353,20 @@ body {
 ## Step 8: Deploy Your Frontend App
 
 1. Deploy your Next.js app to [Vercel](https://vercel.com/) (or your preferred hosting platform)
+   Note: When deploying on Vercel. Make sure to change the install command as following:
+
+```bash
+npm install --legacy-peer-deps
+```
+
+<img src="../assets/images/image19.png" alt="Vercel" width="300" />
+
 2. Add your NEXT_PUBLIC_PRIVY_APP_ID environment variable in the Vercel dashboard.
+   <img src="../assets/images/image20.png" alt="Vercel" width="300" />
+
+<img src="../assets/images/image21.png" alt="Vercel" width="500" />
 
 ## Conclusion
 
 You've now set up a Next.js app integrated with Privy Wallet for Flow EVM! 🎉
+You can turn your dApp with Privy into a Telegram Web App by following [Course 1: Deploy A Telegram Web App](../Course_1_Deploy_A_Telegram_Web_App/)

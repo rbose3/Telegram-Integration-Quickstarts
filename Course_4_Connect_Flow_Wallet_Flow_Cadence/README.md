@@ -8,7 +8,7 @@
 
 View [Live Demo](https://fcl-wallet-discovery.vercel.app/)
 
-View [Github Example](https://github.com/bz-hashtag-0780/fcl-wallet-discovery)
+View [Example Code](example/fcl-wallet-discovery-main/)
 
 ![Live Demo Example](../assets/images/image10.gif)
 
