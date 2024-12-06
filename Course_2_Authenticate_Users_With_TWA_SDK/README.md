@@ -28,14 +28,12 @@ With this setup, you can fetch user data directly, allowing you to personalize c
 npx create-next-app@latest my-telegram-app --typescript --use-npm
 ```
 ​
-
 ### 2. Navigate to Your Project Directory
 
 ```bash 
 cd my-telegram-app
 ```
 ​
-
 ### 3. Install the @twa-dev/sdk with the —legacy-peer-deps flag
 
 ```bash 
