@@ -24,17 +24,23 @@ With this setup, you can fetch user data directly, allowing you to personalize c
 
 ### 1. Run the command in your terminal
 
-`bash npx create-next-app@latest my-telegram-app --typescript --use-npm`
+```bash 
+npx create-next-app@latest my-telegram-app --typescript --use-npm
+```
 ​
 
 ### 2. Navigate to Your Project Directory
 
-`bash cd my-telegram-app`
+```bash 
+cd my-telegram-app
+```
 ​
 
 ### 3. Install the @twa-dev/sdk with the —legacy-peer-deps flag
 
-`bash npm install @twa-dev/sdk --legacy-peer-deps`
+```bash 
+npm install @twa-dev/sdk --legacy-peer-deps
+```
 
 ## Step 2: Set Up the Authentication Context with @twa-dev/sdk
 
